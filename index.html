@@ -11,68 +11,148 @@
       <h1>Treinando CSS para Iniciantes</h1>
     </header>
     <div class="bar"></div>
-    <section class="section-one">
-      <h2>Organizando através do Hover para apresentação</h2>
-      <div class="gallery-animated">
-        <div
-          style="
-            background-image: url('./assets/section 1/alchemyrefiner_alchemymagic_1_8eb416ff-370f-47a1-a01d-5b175178daac_0.jpg');
-          "
-          onmouseover="showDescription('Pets de Halloween')"
-          onmouseout="hideDescription()"
-        ></div>
-        <div
-          style="background-image: url('./assets/section 1/Cat\ Colorful.jpg')"
-          onmouseover="showDescription('Um gato colorido te encarando')"
-          onmouseout="hideDescription()"
-        ></div>
-        <div
-          style="
-            background-image: url('./assets/section 1/Default_Create_a_logo_of_a_smiling_gorilla_with_a_hoodie_and_d_3_037032cd-7255-460e-8b67-bec43870faac_1.jpg');
-          "
-          onmouseover="showDescription('Um Gorila aviador')"
-          onmouseout="hideDescription()"
-        ></div>
-        <div
-          style="
-            background-image: url('./assets/section 1/DreamShaper_v6_logo_vector_baby_cute_panda_using_a_sweatshirt_1.jpg');
-          "
-          onmouseover="showDescription('Um panda vestindo casaco azul')"
-          onmouseout="hideDescription()"
-        ></div>
-        <div
-          style="background-image: url('./assets/section 1/Photo\ teste.jpg')"
-          onmouseover="showDescription('Um stuart little peaky blinder')"
-          onmouseout="hideDescription()"
-        ></div>
-        <div
-          style="
-            background-image: url('./assets/section 1/alchemyrefiner_alchemymagic_1_c207fcaa-079d-4c87-a714-b3dd163ad75a_0.jpg');
-          "
-          onmouseover="showDescription('O mesmo panda de antes só que no final de semana')"
-          onmouseout="hideDescription()"
-        ></div>
-      </div>
-      <div class="description-card">
-        <h4 id="image-description"></h4>
-      </div>
-    </section>
-    <section class="section-two">
-      <h2>Animação de "Flip" no card somente com CSS</h2>
-      <div class="container">
-        <div class="card-img">
-          <div class="front"></div>
-          <div class="back">
-            <h1>Bruxa Morgana</h1>
-            <p class="text-card">
-              Fada Morgana, sendo conhecida na Grã-Bretanha como Morgana a Fada
-              (Morgan Le Fay), Lineanne, dentre outros nomes, aparece nas
-              histórias do Rei Artur.
-            </p>
+    <main class="main-side">
+      <section class="section-one">
+        <h2>Organizando através do Hover para apresentação</h2>
+        <div class="gallery-animated">
+          <div
+            style="
+              background-image: url('./assets/section 1/alchemyrefiner_alchemymagic_1_8eb416ff-370f-47a1-a01d-5b175178daac_0.jpg');
+            "
+            onmouseover="showDescription('Pets de Halloween')"
+            onmouseout="hideDescription()"
+          ></div>
+          <div
+            style="
+              background-image: url('./assets/section 1/Cat\ Colorful.jpg');
+            "
+            onmouseover="showDescription('Um gato colorido te encarando')"
+            onmouseout="hideDescription()"
+          ></div>
+          <div
+            style="
+              background-image: url('./assets/section 1/Default_Create_a_logo_of_a_smiling_gorilla_with_a_hoodie_and_d_3_037032cd-7255-460e-8b67-bec43870faac_1.jpg');
+            "
+            onmouseover="showDescription('Um Gorila aviador')"
+            onmouseout="hideDescription()"
+          ></div>
+          <div
+            style="
+              background-image: url('./assets/section 1/DreamShaper_v6_logo_vector_baby_cute_panda_using_a_sweatshirt_1.jpg');
+            "
+            onmouseover="showDescription('Um panda vestindo casaco azul')"
+            onmouseout="hideDescription()"
+          ></div>
+          <div
+            style="background-image: url('./assets/section 1/Photo\ teste.jpg')"
+            onmouseover="showDescription('Um stuart little peaky blinder')"
+            onmouseout="hideDescription()"
+          ></div>
+          <div
+            style="
+              background-image: url('./assets/section 1/alchemyrefiner_alchemymagic_1_c207fcaa-079d-4c87-a714-b3dd163ad75a_0.jpg');
+            "
+            onmouseover="showDescription('O mesmo panda de antes só que no final de semana')"
+            onmouseout="hideDescription()"
+          ></div>
+          <div
+            style="
+              background-image: url('./assets/section 1/Default_A_rainbow_colored_Rough_Collie_In_the_style_of_Lisa_Fr_3_10fa61cc-820d-4b5b-b109-f8a25ef505d6_1.jpg');
+            "
+            onmouseover="showDescription('Como tem um gato tem que ter um cachorrinho')"
+            onmouseout="hideDescription()"
+          ></div>
+          <div
+            style="
+              background-image: url('./assets/section 1/Default_Scrooge_McDuck_with_the_gold_money_background_American_3_5dc1a125-3735-4f03-8e0b-d79e9a685cb3_1.jpg');
+            "
+            onmouseover="showDescription('É o tio patinhas, quem não conhece é maluco')"
+            onmouseout="hideDescription()"
+          ></div>
+          <div
+            style="
+              background-image: url('./assets/section 1/3D_Animation_Style_bear_sun_bear_0.jpg');
+            "
+            onmouseover="showDescription('Um urso tentando te seduzir')"
+            onmouseout="hideDescription()"
+          ></div>
+        </div>
+        <div class="description-card">
+          <h4 id="image-description"></h4>
+        </div>
+      </section>
+      <section class="section-two">
+        <h2>Animação de "Flip" no card somente com CSS</h2>
+        <div class="container">
+          <div class="card-img">
+            <div class="front"></div>
+            <div class="back">
+              <h1>Bruxa Morgana</h1>
+              <p class="text-card">
+                Fada Morgana, sendo conhecida na Grã-Bretanha como Morgana a
+                Fada (Morgan Le Fay), Lineanne, dentre outros nomes, aparece nas
+                histórias do Rei Artur.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="section-three">
+        <h2>Animação Card de Blur com Hover</h2>
+        <div class="container-three">
+          <div class="card-grid">
+            <a href="#" class="card">
+              <div
+                class="background"
+                style="
+                  background-image: url('./assets/section 3/alchemyrefiner_alchemymagic_3_51bee422-fd20-4a0c-acc0-3f81a271b6a7_0.jpg');
+                "
+              ></div>
+              <span class="content">
+                <p class="category">Personagem</p>
+                <h3 class="heading">Warrior Top</h3>
+              </span>
+            </a>
+            <a href="#" class="card">
+              <div
+                class="background"
+                style="
+                  background-image: url('./assets/section 3/Default_Logo_for_a_company_where_the_image_is_a_caravelshaped_0_bd30a12e-ba6f-4c21-8555-2c6c185eb53a_1.jpg');
+                "
+              ></div>
+              <span class="content">
+                <p class="category">Brainstorm</p>
+                <h3 class="heading-yellow">Pensador Lip</h3>
+              </span>
+            </a>
+            <a href="#" class="card">
+              <div
+                class="background"
+                style="
+                  background-image: url('./assets/section 3/PhotoReal_A_mysterious_silhouette_emerges_from_the_fog_its_for_3.jpg');
+                "
+              ></div>
+              <span class="content">
+                <p class="category">Category</p>
+                <h3 class="heading">Card Heading</h3>
+              </span>
+            </a>
+            <a href="#" class="card">
+              <div
+                class="background"
+                style="
+                  background-image: url('./assets/section 3/PhotoReal_futuristic_female_street_warrior_with_two_guns_in_ho_1.jpg');
+                "
+              ></div>
+              <span class="content">
+                <p class="category">Category</p>
+                <h3 class="heading">Card Heading</h3>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
