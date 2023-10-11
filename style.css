@@ -17,8 +17,13 @@ body {
 
 .main-side {
   background: linear-gradient(to top, #27374d, #222);
-  width: 1400px;
   margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .main-site {
+    width: 100%;
+  }
 }
 
 header {
@@ -219,7 +224,12 @@ h2 {
 .section-three {
   margin-top: 100px;
   min-height: 1000px;
-  width: 1400px;
+}
+
+@media (max-width: 900px) {
+  .section-three {
+    height: fit-content;
+  }
 }
 .section-three h2 {
   background: linear-gradient(to right, yellow, white);
@@ -369,7 +379,7 @@ h2 {
 .area-card {
   display: flex;
   width: 100%;
-  height: 80%;
+  height: fit-content;
   justify-content: center;
 }
 
@@ -442,4 +452,162 @@ h2 {
   background-image: url("https://i.pinimg.com/originals/0b/24/e6/0b24e6345b7bc89683576898c21e6091.gif");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section five */
+.section-five {
+  height: fit-content;
+  margin-top: 40px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+.img-five {
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/section 5/Absolute_Reality_v16_Pennywise_Dance_and_The_Dead_Lights_0.jpg");
+  background-position: center center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.card-five {
+  flex: 0 0 calc(33.33% - 20px);
+  height: 500px;
+  border: 2px dashed red;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+.card-area-flip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.content-five {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+  padding-top: 45%;
+}
+.title-five {
+  font-size: 30px;
+  text-align: center;
+}
+.text-five {
+  font-size: 18px;
+  text-align: justify;
+  color: yellow;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  transform: translateY(0);
+}
+.back-title {
+  background: rgba(255, 55, 11, 0.6);
+  transition: transform 0.3s ease;
+  transform: translateY(0);
+}
+.back-title-hovered {
+  transform: translateY(-160px);
+}
+.text-content-hovered {
+  transform: translateY(130px);
+}
+@media screen and (max-width: 768px) {
+  .content-five {
+    gap: 5px;
+    padding-top: 10%;
+  }
+  .title-five {
+    font-size: 24px;
+  }
+  .text-five {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-area-flip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+.card-color-1 {
+  border-color: red;
+}
+.card-color-2 {
+  border-color: rgba(60, 179, 113);
+
+  .back-title {
+    background: rgba(60, 179, 113, 0.6);
+  }
+}
+.card-color-3 {
+  border-color: rgba(106, 90, 205);
+
+  .back-title {
+    background: rgba(106, 90, 205, 0.6);
+  }
+}
+.card-color-4 {
+  border-color: rgb(60, 60, 60);
+
+  .back-title {
+    background: rgba(60, 60, 60, 0.6);
+  }
+}
+.card-color-5 {
+  border-color: #0000f4;
+
+  .back-title {
+    background: rgba(0, 0, 244, 0.6);
+  }
+}
+.card-color-6 {
+  border-color: orange;
+
+  .back-title {
+    background: linear-gradient(
+      to right,
+      rgba(25, 30, 31, 0.6),
+      rgba(255, 255, 0, 0.6)
+    );
+  }
+}
+.card-color-7 {
+  border-color: #0fffee;
+  .back-title {
+    background: rgba(15, 255, 238, 0.6);
+  }
+}
+.card-color-8 {
+  border-color: green;
+  .back-title {
+    background: linear-gradient(
+      to right,
+      rgba(60, 179, 113, 0.6),
+      rgba(0, 0, 255, 0.6)
+    );
+  }
+}
+.card-color-9 {
+  border-color: red;
+
+  .back-title {
+    background: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.6),
+      rgba(101, 67, 33, 0.6)
+    );
+  }
 }
